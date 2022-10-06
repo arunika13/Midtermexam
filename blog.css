@@ -1,0 +1,391 @@
+* {padding: 0; margin: 0;}
+* {font-family: "Rubik",sans-serif;}
+
+/* Menu */
+ul li {list-style-type: none;}
+
+ul li a {text-decoration: none;}
+
+menu {padding: 30px 0 30px 20px;
+    height: 50px;
+    position: relative;
+    background-color: whitesmoke;}
+
+menu .container {display: inline-block;}
+
+menu .logoimage {margin-right: 25px;
+    float: left;
+    padding: 0 22px;}
+
+menu .logoimage img {width: 50px;
+    height: 50px;
+    object-fit: cover;}
+
+menu .menu-header {padding: 12px;
+    float: left;}
+
+menu .menu-header li {margin-right: 35px;
+    float: left;
+    position: relative;}
+
+menu .menu-header li a {color: black;}
+
+menu .menu-header li i {color: lightgray;}
+
+menu .menu-header li ul {top: 20px;
+    width: 220px;
+    transition: all 0.6s ease;
+    z-index: 2;
+    opacity: 0;
+    background-color: whitesmoke;
+    visibility: hidden;
+    position: absolute;}
+
+menu .menu-header li ul li {float: none;
+    position: relative;}
+
+menu .menu-header li:hover > ul {visibility: visible;
+    opacity: 1;
+    top: 45px;}
+
+menu .menu-header li ul li a {padding: 0 15px;
+    line-height: 40px;
+    position: relative;}
+
+menu .menu-header li a:hover {color: #BC8F8F;}
+
+menu .information {padding: 12px 0;}
+
+menu .information .container {position: absolute;
+    margin-right: 80px;
+    right: 0;}
+
+menu .information .phonenum {padding-right: 10px;
+    display: inline-block;
+    border-right: 1px solid lightgray;}
+
+menu .information .phonenum i {color: #BC8F8F;}
+
+
+menu .information .phonenum p {font-size: 15px;
+    display: inline-block;}
+
+menu .information .socialmedia {margin-right: 10px;
+    display: inline-block;}
+
+menu .information .socialmedia li {margin: 0 11px;
+    display: inline-block;}
+
+menu .information .socialmedia li i {color: lightgray;
+    transition: color 0.3s ease;}
+
+menu .information .socialmedia li:hover i {
+    color: black;
+}
+
+menu .search {background-color: #BC8F8F;
+    width: 80px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    cursor: pointer;}
+
+menu .search i {color: black;
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin: auto;
+    padding: 50% 0;}
+
+/* Main Area */
+.main-area {background-image: url("../14092022/images/nusapenida3.jpg");
+    padding: 165px 0;
+    background-size: cover;}
+
+.main-area .container {text-align: center;
+    display: block;}
+
+.main-area .container h3 {font-family: "Nothing You Could Do", cursive;
+    color: black;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 60px;}
+
+.main-area .container p {font-family: 'Rubik', sans-serif;
+    color: black;
+    font-size: 20px;
+    margin-top: 33px;
+    margin-bottom: 49px;
+    font-weight: 400;}
+
+/* Blog Selection */
+.blogselect {padding: 130px 0;}
+
+.blogselect a {text-decoration: none;}
+
+.blogselect .container {width: 1110px;
+    margin: auto;
+    position: relative;}
+
+.left {width: 730px;
+    display: inline-block;}
+
+.blog {display: inline-block;
+    margin-bottom: 52px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 3px 15px rgba(114, 113, 113, 0.1);}
+
+.blog-images {position: relative;}
+
+.blog-images img {width: 730px;
+    height: 365px;
+    display: block;
+    object-fit: cover;}
+
+.blog-images .date {background-color: rgb(255, 74, 83);
+    color: whitesmoke;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 5px;
+    position: absolute;
+    left: 40px;
+    bottom: -20px;}
+
+.blog-images .date h3 {font-size: 30px;}
+
+.blog-information {width: 665px;
+    padding: 60px 30px 30px 30px;}
+
+.blog-information .title {text-decoration: none;
+    color: black;}
+
+.blog-information .title:hover {color: rgb(255, 74, 83);}
+
+.blog-information .title h2 {margin-bottom: 15px;}
+
+.blog-information p {line-height: 28px;
+    color: lightgray;
+    margin-bottom: 30px;}
+
+.information-link * {color: rgb(101, 99, 99);}
+
+.information-link {display: inline-block;
+    margin: 0 8px;}
+
+.information-link a {font-size: 14px;
+    cursor: pointer;}
+
+.information-link i {margin-right: 5px;
+    font-size: 13px;}
+
+.information-link a:hover, .information-link a:hover i {color: rgb(255, 74, 83);}
+
+/* Pagination */
+.b-pagination {text-align: center;}
+
+.pagination {display: inline-block;}
+
+.pagination a {color: rgb(134, 133, 133);
+    font-size: 14px;
+    float: left;
+    padding: 14px 18px;
+    margin: 0 4px;
+    text-decoration: none;
+    border: 1px solid rgb(240, 233, 255);}
+
+.pagination a.active {background-color: whitesmoke;}
+
+.pagination a:hover {color: rgb(255, 74, 83);
+    background-color: whitesmoke;}
+
+/* Right Coloumn */
+.right {width: 350px;
+    position: absolute;
+    top: 0;
+    right: 0;}
+
+.right-category {background-color: rgb(249, 246, 255);
+    padding: 28px;
+    margin-bottom: 30px;}
+
+.right-category h4 {font-size: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(240, 233, 255);}
+
+
+.searching {background-color: rgb(249, 246, 255);
+    padding: 30px;
+    margin-bottom: 30px;}
+
+.searching .search-box {display: inline-block;}
+
+.searching .search-box input {width: 221.5px;
+    height: 36px;
+    padding: 6px 12px 6px 20px;
+    border: 1px solid rgb(227, 225, 225);}
+
+.searching .search-box .search-icon {padding: 4px 10px;
+    line-height: 40px;
+    margin-left: -5px;
+    border: 1px solid rgb(227, 225, 225);
+    border-left: none;
+    background-color: whitesmoke;
+    margin-bottom: 16px;}
+
+.searching .search-box .search-icon i {width: 14px;
+    height: 14px;
+    color: lightgray;}
+
+.searching button[type=submit] {padding: 14px 44px;
+    background-color: rgb(255, 74, 83);
+    color: whitesmoke;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;}
+
+.searchign button[type=submit]:hover {background-color: rgb(30, 198, 181);
+    color: black;}
+
+.right-category ul li {padding: 13px 0;
+    margin: 1px;
+    border-bottom: 1px solid rgb(240, 233, 255);}
+
+.right-category ul li a {color: #7a838b;}
+
+.right-category ul li a:hover {color: rgb(255, 74, 83);}
+
+.upload {margin-top: 20px;}
+
+.upload img {width: 80px;
+    height: 80px;
+    object-fit: cover;}
+
+.upld-info {display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 16px;}
+
+.upld-info a h3 {font-size: 16px;
+    margin-bottom: 5px;
+    color: black;}
+
+.upld-info a h3:hover {color: rgb(255, 74, 83);}
+
+.upld-info p {font-size: 14px;
+    color: #999;}
+
+.right-tagclouds li {display: inline-block;
+    margin-right: 3px;
+    margin-bottom: 15px}
+
+.right-tagclouds li a {font-size: 13px;
+    background-color: white;
+    color: rgb(102, 100, 100);
+    padding: 4px 20px;
+    border: 1px solid rgb(227, 225, 225);
+    transition: all 0.3s ease;}
+
+.right-tagclouds li a:hover {background-color: rgb(255, 74, 83);
+    color: whitesmoke;}
+
+.right-feeds ul li {display: inline-block;
+    padding: 0 3px;
+    margin-bottom: 15px;}
+
+.right-feeds ul img {width: 88px;
+    height: 88px;
+    object-fit: cover;}
+
+.right-newsletter .input-email {margin-bottom: 15px;}
+
+.right-newsletter .input-email input {display: block;
+    width: 260px;
+    height: 36px;
+    padding: 6px 12px 6px 20px;
+    border: 1px solid rgb(227, 225, 225);}
+
+.right-newsletter button[type=submit] {font-size: 14px;
+    padding: 14px 44px;
+    background-color: rgb(30, 198, 181);
+    color: whitesmoke;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    line-height: 21px;}
+
+.right-newsletter button[type=submit]:hover {background-color: rgb(255, 74, 83);}
+
+/* Footer */
+footer {background-color: rgb(4, 14, 39);}
+
+.topfooter {padding-top: 115px;
+    padding-bottom: 129px;
+    font-size: 14px;}
+
+footer .container {margin: auto;
+    width: 1240px;}
+
+.topfooter h3 {
+    color: whitesmoke;
+    font-size: 20px;
+    margin-bottom: 45px;}
+
+.topfooter li {
+    line-height: 36px;
+    list-style-type: none;}
+
+.topfooter a {
+    color: lightgray;
+    text-decoration: none;
+    transition: color 0.3s ease;}
+
+.topfooter a:hover {color: #BC8F8F;}
+
+.first-coloumn, .second-coloumn, .third-coloumn, .fourth-coloumn {padding: 0 10px;
+    display: inline-block;
+    vertical-align: text-top;} 
+
+.first-coloumn {margin-left: 40px;
+    width: 345px;}
+
+.first-coloumn .logoimage img {width: 75px;
+    height: 75px;
+    object-fit: cover;
+    margin-bottom: 45px;}
+
+.first-coloumn p {color: lightgray;
+    line-height: 26px;}
+
+.first-coloumn .socialmedia {margin-top: 45px;}
+
+.first-coloumn .socialmedia li {font-size: 20px;
+    display: inline-block;
+    margin: 0 7px;}
+
+.second-coloumn {width: 180px;}
+
+.third-coloumn {width: 275px;}
+
+.third-coloumn li {width: 127px;
+    display: inline-block;}
+
+.fourth-coloumn {width: 275px;}
+
+.fourth-coloumn a img {width: 79px;
+    height: 75px;
+    border-radius: 5px;
+    margin: 5px;
+    object-fit: cover;}
+
+.bottom-footer .container {width: 1100px;
+    margin: auto;
+    text-align: center;
+    padding: 27px 0;
+    border-top: 1px solid lightgray;}
+
+.bottom-footer p {color: lightgray;
+    font-size: 14px;}
