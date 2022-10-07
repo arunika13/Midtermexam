@@ -99,16 +99,19 @@ menu .search {background-color: #BC8F8F;
     padding: 50% 0;}
 
 /* Main Area */
-.main-area {background-image: url("../14092022/images/pinkbeach.jpg");
-    padding: 165px 0;
-    background-size: cover;}
+.main-area img {width: 100%;
+    height: 700px;
+    z-index: -1;}
 
-.main-area .container {text-align: center;
-    display: block;}
+.main-area .container {z-index: 1;
+    position: absolute;
+    bottom: 200px;
+    float: left;
+    margin-left: 450px;}
 
-.main-area .container h3 {font-family: "Nothing You Could Do", cursive;
+.main-area .container h3 {font-size: 100px;
     color: black;
-    font-size: 90px;
+    font-family: "Nothing You Could Do", cursive;
     font-weight: 400;
     line-height: 60px;}
 
@@ -119,27 +122,22 @@ menu .search {background-color: #BC8F8F;
     margin-bottom: 49px;
     font-weight: 400;}
 
-.center-explorenow {text-align: center;
-    margin-top: 50px;}
-    
-.explorenow {background-color: #1ec6b5;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 15px 39px;
-    border: none;
-    border-radius: 5px;
+.main-area .container a {position: relative;
+    text-decoration: none;
+    top: 30px;
+    margin-left: 120px;
+    color: whitesmoke;
+    background: rgb(7, 153, 146);
+    padding: 15px;
+    border-radius: 5px;}
+
+.main-area .container a:hover {background: rgb(255, 74, 83);
     color: black;
-    margin: auto;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    cursor: pointer;}
-    
-.explorenow:hover {background-color: #ff4a53;
-    color: whitesmoke;}
+    transition-duration: 0.5s;}
 
 /* Where To-Go */
 form {float: left;
-    background: rgb(4, 14, 39);
+    background: rgb(19, 15, 64);
     padding: 50px 0 30px 0;
     width: 100%;
     overflow: hidden;}
@@ -179,7 +177,7 @@ form .title2 select {width: 180px;
 form .title2 button[type=button] {padding: 12px 13px 9px 13px;
     width: 100px;
     color: whitesmoke;
-    background-color: gray;
+    background-color: #BC8F8F;
     font-size: 15px;
     border: 0.5px solid rgb(4, 14, 39);
     border-radius: 5px;}
@@ -245,69 +243,55 @@ form .title2 button[type=button]:hover {color: black;
     transition: all 0.3s ease;}
 
 /* Subscribe */
-.subscribe {background-image: url(../14092022/images/KelingkingBeach.jpg);
-    background-size: cover;
-    padding: 30px 0;
-    filter: blur(30%);}
-
-.subscribe .title {background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    padding: 20px 0;
-    opacity: .7;
-    margin-bottom:20px}
-
-.subscribe .title h4 {font-size: 24px;
-    font-weight: 400;
+.subscribe {float: left;
+    background: rgb(19, 15, 64);
+    margin-top: 140px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 150px;}
+    
+.subscribe h1 {float: left;
+    margin-left: 200px;
     color: black;
-    margin-bottom: 0;
-    margin-bottom: 11px;}
+    font-size: 20px;
+    font-family: "Rubik",sans-serif;
+    line-height: 30px;}
 
-.subscribe .title p {color: black;
+.subscribe .title {float: left;
+    margin-left: 200px;
+    margin-right: 50px;
+    color: black;
+    font-size: 15px;
+    font-family: "Rubik",sans-serif;
+    display: block;
+    line-height: 30px;
+    width: 300px;}
+
+.subscribe .title label {display: block;
+    line-height: 30px;}
+
+.subscribe .title2 input {margin: 2px;
+    line-height: 26px;}
+
+.subscribe .title2 input .txt {width: 400px;
+    padding: 6px 18px 8px 10px;
     font-size: 16px;
-    line-height: 28px;
-    margin-bottom: 0;}
-
-.subscribe .input {color: lightgray;
-    font-size: 16px;
-    line-height: 28px;
-    margin-bottom: 0;}
-
-.subscribe input[type=email] {width: 50%;
-    height: 50px;
+    margin-right: 10px;
     background: whitesmoke;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    border: 0;
-    padding-left: 15px;
-    color: lightgray;
-    font-size: 16px;
-    font-family: "Rubik",sans-serif;
-    font-weight: 300;}
+    border: 0.5px solid whitesmoke;
+    border-radius: 5px;}
 
-.subscribe input[type=email]::placeholder {color: darkgray;
-    font-size: 16px;
-    font-family: "Rubik",sans-serif;
-    font-weight: 300;}
-
-.center-subscribe {text-align: center;
-    margin-top: 50px;}
-        
-.subs {background-color: rgb(255, 74, 83);
-    font-size: 16px;
-    font-weight: 700;
-    padding: 15px 39px;
-    border: none;
-    border-radius: 5px;
-    color: black;
-    margin: auto;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    cursor: pointer;}
-        
-.subs:hover {background-color: pink;
-        color: whitesmoke;}
+.subscribe .title2 button[type=button] {padding: 12px 13px 9px 13px;
+    width: 100px;
+    color: whitesmoke;
+    background-color: rgb(255, 74, 83);
+    font-size: 15px;
+    border: 0.5px solid rgb(19, 15, 64);
+    border-radius: 5px;}
+    
+.subscribe .title2 button[type=button]:hover {color: black;
+    background-color: rgb(75, 207, 250);
+    transition-duration: 0.5s;}
 
 /* Popular Places & Gallery */
 .popular-places {background-color: whitesmoke;}
@@ -519,7 +503,7 @@ footer .container {margin: auto;
     object-fit: cover;
     margin-bottom: 45px;}
 
-.first-coloumn p {color: lightgray;
+.first-coloumn  {color: lightgray;
     line-height: 26px;}
 
 .first-coloumn .socialmedia {margin-top: 45px;}
